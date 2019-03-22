@@ -24,3 +24,14 @@ workflows:
   audit:
     jobs:
       - npm_audit_node_11
+
+  audit:
+     triggers:
+       - schedule:
+           cron: "48 23 * * *"
+           filters:
+             branches:
+               only:
+                 - master
+     jobs:
+       - npm_audit_node_11
