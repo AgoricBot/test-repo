@@ -24,6 +24,7 @@ else
   npm audit fix
   files_changed=true
 fi
+cd ..
 
 if [ "$files_changed" = true ] ; then
   git add . 
