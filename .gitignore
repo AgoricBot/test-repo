@@ -67,6 +67,7 @@ dist/
 integration-test/.cache
 integration-test/bundles
 integration-test/transform-tests/output
+integration-test/node_modules
 
 # hub
 hub
