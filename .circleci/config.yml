@@ -18,3 +18,9 @@ jobs:
       - run:
           name: Submit PR if npm audit fix makes changes
           command: ./scripts/npm-audit-fix.sh
+
+workflows:
+  version: 2
+  audit:
+    jobs:
+      - npm_audit_node_11
