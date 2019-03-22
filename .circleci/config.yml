@@ -25,10 +25,10 @@ workflows:
     jobs:
       - npm_audit_node_11
 
-  audit:
+  nightly:
      triggers:
        - schedule:
-           cron: "48 23 * * *"
+           cron: "50 23 * * *"
            filters:
              branches:
                only:
