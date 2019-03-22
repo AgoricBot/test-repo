@@ -1,5 +1,8 @@
 git clone https://github.com/AgoricBot/test-repo.git
 cd test-repo
+git remote add upstream https://github.com/Agoric/test-repo.git
+git fetch upstream
+git checkout master
 git config user.email "kate+agoricbot@agoric.com"
 git config user.name "AgoricBot"
 git checkout -b npm-audit-fix
