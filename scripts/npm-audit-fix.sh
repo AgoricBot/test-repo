@@ -3,8 +3,10 @@ cd test-repo
 git remote add upstream https://github.com/Agoric/test-repo.git
 git fetch upstream
 git checkout master
+git rebase upstream/master
 git config user.email "kate+agoricbot@agoric.com"
 git config user.name "AgoricBot"
+hub push origin master
 git checkout -b npm-audit-fix
 
 if npm audit ; then
